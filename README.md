@@ -124,6 +124,12 @@ Response body:
 
 ### POST /api/v1/quotes/
 
+Default values for parameters:
+
+`from_currency`: `BTC`
+
+`to_currency`: `USD` 
+
 Request body:
 
     {

@@ -1,9 +1,29 @@
 # Exchange rates API
 
+* [How to start](#how-to-start)
+* [Secrets](#secrets)
 * [API Authentication](#auth-examples)
 * [Request & Response Examples](#request--response-examples)
 
+## How to start
+
+    $ docker-compose up
+
+## Secrets
+
+For the convenience of launching the project, I added .env file with the database credentials and the ALPHAVANTAGE API key to the repository.
+
 ## API Authentication
+
+   - To get access to /api/v1/quotes/ resources user must be authenticated on the server using the Bearer Token authentication type.  
+   - Below, you can see an example of registering a new user and obtaining/refreshing a token.
+   - Token lifetime by default is set for 1 hour and can be changed through the Django settings file.
+
+    SIMPLE_JWT = {
+        'ACCESS_TOKEN_LIFETIME': timedelta(hours=1),
+        'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    }
+
 
 ### Examples
 

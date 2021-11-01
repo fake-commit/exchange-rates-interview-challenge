@@ -7,6 +7,10 @@
 
 ## How to start
 
+Project is developed and tested using Python 3.10.
+
+To run the project, clone the repository, navigate to the root of the repository, and simply run the command:
+
     $ docker-compose up
 
 ## Secrets
